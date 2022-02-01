@@ -1,0 +1,110 @@
+[
+  {
+    "batman": [
+      {
+        "id": 0,
+        "img": "https://tvline.com/wp-content/uploads/2021/12/michael-keaton-batman-batgirl-movie.jpg?w=620",
+        "actor": "Michael Keaton",
+        "movies": ["Batman, ", "Batman Returns"],
+        "playlistId": "PLaI6jcDw1oMDQyllnVt6AQEQMj8vjM-t1"
+      },
+      {
+        "id": 1,
+        "img": "https://i.guim.co.uk/img/media/5148b6d9eb3c681e96fd7d86e6124d4ba98eda91/355_151_1611_967/master/1611.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=065fb7b4ef10a5f60eab94219318065c",
+        "actor": "Val Kilmer",
+        "movies": ["Batman Forever"],
+        "playlistId": "PLaI6jcDw1oMBvACeFaEBskrypjG3kiDaz"
+      },
+      {
+        "id": 2,
+        "img": "https://cdn.vox-cdn.com/thumbor/WlpyNspC57VtKtI3OcrZcgaGmq8=/0x0:1600x1067/1200x800/filters:focal(0x0:1600x1067)/cdn.vox-cdn.com/uploads/chorus_image/image/45611514/BatmanRobin.0.jpg",
+        "actor": "George Clooney",
+        "movies": ["Batman and Robin"],
+        "playlistId": "PLaI6jcDw1oMCLkA0y7BoRKFQdJ_aP6034"
+      },
+      {
+        "id": 3,
+        "img": "https://w0.peakpx.com/wallpaper/792/587/HD-wallpaper-batman-the-dark-knight-bruce-wayne-christian-bale.jpg",
+        "actor": "Christian Bale",
+        "movies": [
+          " Batman Begins, ",
+          " The Dark Knight, ",
+          " The Dark Knight Rises "
+        ],
+        "playlistId": "PLaI6jcDw1oMDbjmnppKMUHxctjL4yGIDy"
+      },
+      {
+        "id": 4,
+        "img": "https://i.guim.co.uk/img/media/4fe247229f26aaee75ebb32d85db2e844452a402/0_64_3520_2110/master/3520.jpg?width=465&quality=45&auto=format&fit=max&dpr=2&s=36d7f73a78c8db4e26364ffe254dffd2",
+        "actor": "Ben Affleck",
+        "movies": [
+          "Batman v. Superman: Dawn of Justice, ",
+          "Suicide Squad, ",
+          "Justice League, ",
+          "Zack Snyder's Justice League, "
+        ],
+        "playlistId": "PLaI6jcDw1oMDQyllnVt6AQEQMj8vjM-t1"
+      }
+    ],
+    "superman": [
+      {
+        "id": 0,
+        "img": "https://deadline.com/wp-content/uploads/2020/05/man-of-steel.jpg",
+        "actor": "Henry Cavil",
+        "movies": [
+          " Batman v. Superman: Dawn of Justice, ",
+          " Man of Steel, ",
+          " Justice League, ",
+          " Zack Snyder's Justice League "
+        ],
+        "playlistId": "PLaI6jcDw1oMAfSEjvbk_coswb7W2kLyNf"
+      },
+      {
+        "id": 1,
+        "img": "https://m.media-amazon.com/images/M/MV5BMjMzNTA4MTc0OV5BMl5BanBnXkFtZTgwNDAyNTMwMjE@._V1_.jpg",
+        "actor": "David Routh",
+        "movies": ["Superman Returns"],
+        "playlistId": "PLaI6jcDw1oMA6raX2EeWKuOWa5XcbvQwj"
+      },
+      {
+        "id": 2,
+        "img": "https://static.onecms.io/wp-content/uploads/sites/6/2020/12/10/Superman-New-suit.jpg",
+        "actor": "Tyler Hoechlin",
+        "movies": ["Superman and Lois, ", " Supergirl "],
+        "playlistId": "PLaI6jcDw1oMAdY5NnV4khMLLsW1ReulmA"
+      }
+    ],
+    "spiderman": [
+      {
+        "id": 0,
+        "img": "https://wallpaperaccess.com/full/6518915.jpg",
+        "actor": "Toby Maguire",
+        "movies": [
+          "Spider-Man, ",
+          "Spider-Man 2, ",
+          "Spider-Man 3, ",
+          "Spider-Man: No Way Home"
+        ],
+        "playlistId": "PLaI6jcDw1oMBB-vm-gobeSUTOUVOJIL_m"
+      },
+      {
+        "id": 1,
+        "img": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d9/Andrew_Garfield_Spider-Man.jpg/220px-Andrew_Garfield_Spider-Man.jpg",
+        "actor": "Andrew Garfield",
+        "movies": ["The Amazing Spider-Man, ", "The Amazing Spider-Man 2, "],
+        "playlistId": "PLaI6jcDw1oMBZ6SeDVeuCYJNYpbruPy7Y"
+      },
+      {
+        "id": 2,
+        "img": "https://dailysuperheroes.com/wp-content/uploads/2020/03/tom-holland-spider-man.jpg",
+        "actor": "Tom Holland",
+        "movies": [
+          "Spider-Man: Homecoming, ",
+          "Spider-Man: Far From Home, ",
+          "Spider-Man: No Way Home"
+        ],
+        "playlistId": "PLaI6jcDw1oMB8JI38xCQktJ_s29hNgfns"
+      }
+    ]
+  }
+]
