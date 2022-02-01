@@ -25,7 +25,7 @@ async function getPlaylist(e, videoData) {
       {
         //Parameters
         params: {
-          key: process.env.REACT_APP_YouTube_API_KEY,
+          key: process.env.REACT_APP_YouTube,
           //get playlist by checking the actor's card button
           playlistId: hero[name][e.target.value].playlistId,
           part: "snippet",
