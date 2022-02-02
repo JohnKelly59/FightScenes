@@ -1,25 +1,42 @@
 import React from "react";
-import { Card, Button } from "react-bootstrap";
-import "bootstrap/dist/css/bootstrap.css";
+import Card from "@mui/material/Card";
+import CardActions from "@mui/material/CardActions";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
 import getPlaylist from "./features";
 
 function Cards(props) {
   return (
     <div>
-      <Card style={{ width: "25rem" }} bg="warning" className="card">
-        <Card.Img variant="top" src={props.img} height="286" weight="180" />
-        <Card.Body>
-          <h5>{props.actor}</h5>
-          <Card.Text>{props.movies}</Card.Text>
+      <Card sx={{ maxWidth: 345 }} className="card">
+        <CardMedia
+          component="img"
+          height="286"
+          width=""
+          image={props.img}
+          alt="image"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="div">
+            {props.actor}
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+            {props.movies}
+          </Typography>
+        </CardContent>
+        <CardActions>
           <Button
-            variant="danger"
+            size="small"
             name={props.name}
             value={props.id}
             onClick={getPlaylist}
+            variant="contained"
           >
             Videos
           </Button>
-        </Card.Body>
+        </CardActions>
       </Card>
 
       <br />

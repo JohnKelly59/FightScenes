@@ -54,4 +54,10 @@ async function getPlaylist(e, videoData) {
   }
 }
 
+function closeVideo() {
+  configureStore.dispatch(videosLoaded([]));
+}
+
 export default getPlaylist;
+
+export const closeVideos = closeVideo;

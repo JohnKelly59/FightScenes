@@ -2,7 +2,7 @@ import React from "react";
 
 function Videos(props) {
   return (
-    <div>
+    <div className="videosLayout">
       <iframe
         key={props.id}
         width="560"

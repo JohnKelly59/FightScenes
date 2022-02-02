@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { bubble as Menu } from "react-burger-menu";
+import { push as Menu } from "react-burger-menu";
 
 import "bootstrap/dist/css/bootstrap.css";
 
@@ -14,7 +14,7 @@ function Navbar() {
   return (
     <div>
       {open ? (
-        <Menu width={"30%"}>
+        <Menu pageWrapId={"page-wrap"} outerContainerId={"outer-container"}>
           <Link to="/" style={{ color: "#f7f7f7" }}>
             {" "}
             <h1>Home</h1>

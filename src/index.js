@@ -9,7 +9,7 @@ import { BrowserRouter } from "react-router-dom";
 ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>
-      <App />
+      <App id="outer-container" />
     </BrowserRouter>
     ,
   </Provider>,

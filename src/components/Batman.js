@@ -3,9 +3,8 @@ import data from "../heroes";
 import Cards from "./Card";
 import { CardGroup } from "react-bootstrap";
 import { useSelector } from "react-redux";
-
-//array to hold video data
-var videoData = [];
+import { closeVideos } from "./features";
+import Button from "@mui/material/Button";
 
 function createCard() {
   for (var j = 0; j < data.length; j++) {
@@ -31,13 +30,21 @@ function createCard() {
 }
 
 function Batman() {
-  console.log(videoData);
   const videos = useSelector((state) => state.load.value);
 
   return (
     <div>
+      {videos.length !== 0 ? (
+        <Button
+          className="closeButton"
+          variant="contained"
+          onClick={closeVideos}
+        >
+          Close
+        </Button>
+      ) : null}
       <h1>Batman</h1>
-      <CardGroup>{createCard()}</CardGroup>
+      <CardGroup className="cards">{createCard()}</CardGroup>
       <span className="videos">{videos}</span>
     </div>
   );
