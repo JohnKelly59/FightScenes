@@ -1,6 +1,12 @@
+@font-face {
+  font-family: myFont;
+  src: url(../public/fonts/YoungPatriotBoldItalic-nRx20.otf);
+}
+
 .App {
   text-align: center;
   color: white;
+  font-family: myFont;
 }
 
 .App-logo {
@@ -42,4 +48,8 @@
   padding: 10px;
   margin: 10px;
   color: black;
+}
+
+.secondaryCard {
+  font-family: myFont !important;
 }

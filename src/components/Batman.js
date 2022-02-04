@@ -5,6 +5,8 @@ import { CardGroup } from "react-bootstrap";
 import { useSelector } from "react-redux";
 import { closeVideos } from "./features";
 import Button from "@mui/material/Button";
+import Dialog from "@mui/material/Dialog";
+import Paper from "@mui/material/Paper";
 
 function createCard() {
   for (var j = 0; j < data.length; j++) {
@@ -34,18 +36,24 @@ function Batman() {
 
   return (
     <div>
-      {videos.length !== 0 ? (
-        <Button
-          className="closeButton"
-          variant="contained"
-          onClick={closeVideos}
-        >
-          Close
-        </Button>
-      ) : null}
-      <h1>Batman</h1>
+      <Paper elevation={3} square={true}>
+        <h1 className="title">Batman</h1>
+      </Paper>
       <CardGroup className="cards">{createCard()}</CardGroup>
-      <span className="videos">{videos}</span>
+
+      {videos.length !== 0 ? (
+        <Dialog open="true">
+          {videos}
+          <br />
+          <Button
+            className="closeButton"
+            variant="contained"
+            onClick={closeVideos}
+          >
+            Close
+          </Button>
+        </Dialog>
+      ) : null}
     </div>
   );
 }

@@ -19,7 +19,12 @@ function Cards(props) {
           alt="image"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
+          <Typography
+            className="secondaryCard"
+            gutterBottom
+            variant="h5"
+            component="div"
+          >
             {props.actor}
           </Typography>
           <Typography variant="body2" color="text.secondary">
