@@ -19,7 +19,7 @@ function createCard() {
       <Cards
         name="spiderman"
         key={hero.spiderman[i].id}
-        id={hero.batman[i].id}
+        id={hero.spiderman[i].id}
         actor={hero.spiderman[i].actor}
         img={hero.spiderman[i].img}
         movies={hero.spiderman[i].movies}

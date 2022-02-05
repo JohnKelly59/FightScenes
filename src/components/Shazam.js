@@ -12,18 +12,18 @@ function createCard() {
   for (var j = 0; j < data.length; j++) {
     var hero = data[j];
   }
-  console.log(hero.superman.actor);
+
   let cardData = [];
-  for (var i = 0; i < hero.superman.length; i++) {
+  for (var i = 0; i < hero.shazam.length; i++) {
     let input = (
       <Cards
-        name="superman"
-        key={hero.superman[i].id}
-        id={hero.superman[i].id}
-        actor={hero.superman[i].actor}
-        img={hero.superman[i].img}
-        movies={hero.superman[i].movies}
-        playlist={hero.superman[i].playlistId}
+        name="shazam"
+        key={hero.shazam[i].id}
+        id={hero.shazam[i].id}
+        actor={hero.shazam[i].actor}
+        img={hero.shazam[i].img}
+        movies={hero.shazam[i].movies}
+        playlist={hero.shazam[i].playlistId}
       />
     );
     cardData.push(input);
@@ -31,15 +31,15 @@ function createCard() {
   return cardData;
 }
 
-function Superman() {
+function Shazam() {
   const videos = useSelector((state) => state.load.value);
 
   return (
     <div>
       <Paper elevation={3} square={true}>
-        <h1 className="title">Superman</h1>
+        <h1 className="title">Shazam</h1>
       </Paper>
-      <CardGroup classname="cards">{createCard()}</CardGroup>
+      <CardGroup className="cards">{createCard()}</CardGroup>
       {videos.length !== 0 ? (
         <Dialog open="true">
           {videos}
@@ -56,4 +56,4 @@ function Superman() {
     </div>
   );
 }
-export default Superman;
+export default Shazam;

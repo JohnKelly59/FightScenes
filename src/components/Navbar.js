@@ -36,8 +36,44 @@ function Navbar() {
             aria-label="mailbox folders"
           >
             <ListItem>
+              <Link to="/aquaman" style={{ color: "#121212" }}>
+                <h1>Aquaman</h1>
+              </Link>
+            </ListItem>
+            <Divider />
+            <ListItem>
               <Link to="/batman" style={{ color: "#121212" }}>
                 <h1>Batman</h1>
+              </Link>
+            </ListItem>
+            <Divider />
+            <ListItem>
+              <Link to="/black-panther" style={{ color: "#121212" }}>
+                <h1>Black Panther</h1>
+              </Link>
+            </ListItem>
+            <Divider />
+            <ListItem>
+              <Link to="/captain-america" style={{ color: "#121212" }}>
+                <h1>Captain America</h1>
+              </Link>
+            </ListItem>
+            <Divider />
+            <ListItem>
+              <Link to="/green-lantern" style={{ color: "#121212" }}>
+                <h1>Green Lantern</h1>
+              </Link>
+            </ListItem>
+            <Divider />
+            <ListItem>
+              <Link to="/hulk" style={{ color: "#121212" }}>
+                <h1>Hulk</h1>
+              </Link>
+            </ListItem>
+            <Divider />
+            <ListItem>
+              <Link to="/spider-man" style={{ color: "#121212" }}>
+                <h1>Spiderman</h1>
               </Link>
             </ListItem>
             <Divider />
@@ -48,8 +84,14 @@ function Navbar() {
             </ListItem>
             <Divider />
             <ListItem>
-              <Link to="/spider-man" style={{ color: "#121212" }}>
-                <h1>Spiderman</h1>
+              <Link to="/shazam" style={{ color: "#121212" }}>
+                <h1>Shazam</h1>
+              </Link>
+            </ListItem>
+            <Divider />
+            <ListItem>
+              <Link to="/wonder-woman" style={{ color: "#121212" }}>
+                <h1>Wonder Woman</h1>
               </Link>
             </ListItem>
           </List>
