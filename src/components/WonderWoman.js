@@ -37,7 +37,7 @@ function Wonderwoman() {
   return (
     <div>
       <Paper elevation={3} square={true}>
-        <h1 className="title">Wonderwoman</h1>
+        <h1 className="title">Wonder Woman</h1>
       </Paper>
       <CardGroup className="cards">{createCard()}</CardGroup>
       {videos.length !== 0 ? (

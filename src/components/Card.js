@@ -6,6 +6,8 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import getPlaylist from "./features";
+import { CardActionArea } from "@mui/material";
+import { Link } from "react-router-dom";
 
 function Cards(props) {
   return (
@@ -49,4 +51,38 @@ function Cards(props) {
   );
 }
 
+function homeCards(props) {
+  let heroName = props.name[0];
+  console.log(heroName);
+  let linkName = heroName.replace(" ", "-");
+  return (
+    <div>
+      <Link to={"/" + linkName}>
+        <Card sx={{ maxWidth: 345 }} className="card">
+          <CardActionArea>
+            <CardMedia
+              component="img"
+              height="286"
+              image={props.img}
+              alt="green iguana"
+            />
+            <CardContent>
+              <Typography
+                gutterBottom
+                variant="h4"
+                component="div"
+                className="secondaryCard"
+              >
+                {props.name}
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+        </Card>
+      </Link>
+    </div>
+  );
+}
+
 export default Cards;
+
+export const HomeCards = homeCards;

@@ -37,7 +37,7 @@ function Captainamerica() {
   return (
     <div>
       <Paper elevation={3} square={true}>
-        <h1 className="title">Captainamerica</h1>
+        <h1 className="title">Captain America</h1>
       </Paper>
       <CardGroup className="cards">{createCard()}</CardGroup>
       {videos.length !== 0 ? (

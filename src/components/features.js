@@ -29,6 +29,7 @@ async function getPlaylist(e, videoData) {
           //get playlist by checking the actor's card button
           playlistId: hero[name][e.target.value].playlistId,
           part: "snippet",
+          maxResults: "50",
         },
       }
     );

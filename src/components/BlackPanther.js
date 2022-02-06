@@ -37,7 +37,7 @@ function Blackpanther() {
   return (
     <div>
       <Paper elevation={3} square={true}>
-        <h1 className="title">Blackpanther</h1>
+        <h1 className="title">Black Panther</h1>
       </Paper>
       <CardGroup className="cards">{createCard()}</CardGroup>
       {videos.length !== 0 ? (

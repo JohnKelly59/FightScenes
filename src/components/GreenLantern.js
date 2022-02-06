@@ -37,7 +37,7 @@ function GreenLantern() {
   return (
     <div>
       <Paper elevation={3} square={true}>
-        <h1 className="title">GreenLantern</h1>
+        <h1 className="title">Green Lantern</h1>
       </Paper>
       <CardGroup className="cards">{createCard()}</CardGroup>
       {videos.length !== 0 ? (
