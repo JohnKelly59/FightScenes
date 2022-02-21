@@ -47,7 +47,7 @@ function Characterpage() {
     <div>
       {/* Display character name */}
       <Paper elevation={3} square={true}>
-        <h1 className="title">{character}</h1>
+        <h1 className="title">{character.toUpperCase()}</h1>
       </Paper>
 
       {/* create card for each actor */}
