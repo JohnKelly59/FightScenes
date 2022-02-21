@@ -8,11 +8,15 @@ import Typography from "@mui/material/Typography";
 import getPlaylist from "./features";
 import { CardActionArea } from "@mui/material";
 import { Link } from "react-router-dom";
+import configureStore from "./store";
+import { characterChosen } from "./characterSlice";
 
 function Cards(props) {
   return (
     <div>
+      {/* cards for character routes */}
       <Card sx={{ maxWidth: 345 }} className="card">
+        {/* card picture */}
         <CardMedia
           component="img"
           height="286"
@@ -21,6 +25,7 @@ function Cards(props) {
           alt="image"
         />
         <CardContent>
+          {/* Actor name */}
           <Typography
             className="secondaryCard"
             gutterBottom
@@ -29,11 +34,13 @@ function Cards(props) {
           >
             {props.actor}
           </Typography>
+          {/* Movies  */}
           <Typography variant="body2" color="text.secondary">
             {props.movies}
           </Typography>
         </CardContent>
         <CardActions>
+          {/* open videos button */}
           <Button
             size="small"
             name={props.name}
@@ -52,14 +59,26 @@ function Cards(props) {
 }
 
 function homeCards(props) {
+  // hero name
   let heroName = props.name[0];
   console.log(heroName);
-  let linkName = heroName.replace(" ", "-");
+  //hero name without spaces
+  let linkName = heroName.replace(" ", "");
   return (
     <div>
+      {/* cards for home */}
+      {/* link to go to character page */}
       <Link to={"/" + linkName}>
-        <Card sx={{ maxWidth: 345 }} className="card">
+        <Card
+          sx={{ maxWidth: 345 }}
+          className="card"
+          onClick={() =>
+            // change character name in redux store
+            configureStore.dispatch(characterChosen(linkName.toLowerCase()))
+          }
+        >
           <CardActionArea>
+            {/* charater picture */}
             <CardMedia
               component="img"
               height="286"
@@ -67,6 +86,7 @@ function homeCards(props) {
               alt="green iguana"
             />
             <CardContent>
+              {/* character name */}
               <Typography
                 gutterBottom
                 variant="h4"

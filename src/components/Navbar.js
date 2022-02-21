@@ -4,18 +4,33 @@ import { push as Menu } from "react-burger-menu";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import Divider from "@mui/material/Divider";
-
+import data from "../heroes";
+import configureStore from "./store";
+import { characterChosen } from "./characterSlice";
 import "bootstrap/dist/css/bootstrap.css";
 
 function Navbar() {
+  // state to hold the option to open and close nav bar
   const [onOpen, setOnOpen] = useState(false);
-
+  //changes navbar to open or close
   const open = () => {
     setOnOpen(!onOpen);
   };
+  //empty array to hold hero names for list
+  var heroNames = [];
+  //puts heroes json data into array
+  for (var j = 0; j < data.length; j++) {
+    var hero = data[j];
+  }
+  //get keys of each object in home array found in heroes json
+  for (var i = 0; i < hero["home"].length; i++) {
+    heroNames.push(Object.keys(hero["home"][i]));
+  }
 
+  console.log(heroNames);
   return (
     <div>
+      {/* checks if sidebar is open or close */}
       {open ? (
         <Menu pageWrapId={"page-wrap"} outerContainerId={"outer-container"}>
           <List
@@ -23,6 +38,7 @@ function Navbar() {
             component="nav"
             aria-label="mailbox folders"
           >
+            {/* Home button link*/}
             <ListItem button>
               <Link to="/">
                 <h1>Home</h1>
@@ -35,65 +51,31 @@ function Navbar() {
             component="nav"
             aria-label="mailbox folders"
           >
-            <ListItem>
-              <Link to="/aquaman" style={{ color: "#121212" }}>
-                <h1>Aquaman</h1>
-              </Link>
-            </ListItem>
-            <Divider />
-            <ListItem>
-              <Link to="/batman" style={{ color: "#121212" }}>
-                <h1>Batman</h1>
-              </Link>
-            </ListItem>
-            <Divider />
-            <ListItem>
-              <Link to="/black-panther" style={{ color: "#121212" }}>
-                <h1>Black Panther</h1>
-              </Link>
-            </ListItem>
-            <Divider />
-            <ListItem>
-              <Link to="/captain-america" style={{ color: "#121212" }}>
-                <h1>Captain America</h1>
-              </Link>
-            </ListItem>
-            <Divider />
-            <ListItem>
-              <Link to="/green-lantern" style={{ color: "#121212" }}>
-                <h1>Green Lantern</h1>
-              </Link>
-            </ListItem>
-            <Divider />
-            <ListItem>
-              <Link to="/hulk" style={{ color: "#121212" }}>
-                <h1>Hulk</h1>
-              </Link>
-            </ListItem>
-            <Divider />
-            <ListItem>
-              <Link to="/spider-man" style={{ color: "#121212" }}>
-                <h1>Spiderman</h1>
-              </Link>
-            </ListItem>
-            <Divider />
-            <ListItem>
-              <Link to="/superman" style={{ color: "#121212" }}>
-                <h1>Superman</h1>
-              </Link>
-            </ListItem>
-            <Divider />
-            <ListItem>
-              <Link to="/shazam" style={{ color: "#121212" }}>
-                <h1>Shazam</h1>
-              </Link>
-            </ListItem>
-            <Divider />
-            <ListItem>
-              <Link to="/wonder-woman" style={{ color: "#121212" }}>
-                <h1>Wonder Woman</h1>
-              </Link>
-            </ListItem>
+            {heroNames.map((item) => {
+              //mapr through hero names to display each character name and creat a route for each
+              return (
+                <div>
+                  <ListItem key={item[0]}>
+                    <Link
+                      to={"/" + item[0].toLowerCase().replace(" ", "")}
+                      style={{ color: "#121212" }}
+                      onClick={() =>
+                        //adds character name to redux store characterSlice
+                        configureStore.dispatch(
+                          characterChosen(
+                            item[0].toLowerCase().replace(" ", "")
+                          )
+                        )
+                      }
+                    >
+                      {/* character name */}
+                      <h1>{item}</h1>
+                    </Link>
+                  </ListItem>
+                  <Divider />
+                </div>
+              );
+            })}
           </List>
         </Menu>
       ) : null}

@@ -2,6 +2,7 @@ import React from "react";
 
 function Videos(props) {
   return (
+    // video windows
     <div className="videosLayout">
       <iframe
         key={props.id}

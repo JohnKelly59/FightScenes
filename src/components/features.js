@@ -15,6 +15,7 @@ async function getPlaylist(e, videoData) {
   }
   //get value of button that was pressed
   console.log(e.target.value);
+  // variable to hold target name
   let name = e.target.name;
   console.log(hero[name][e.target.value]);
   try {
@@ -43,11 +44,14 @@ async function getPlaylist(e, videoData) {
     //creates individual videos
     for (var i = 0; i < links.length; i++) {
       let input = (
+        // create video for each actor link inside heroes json
         <Videos links={"https://www.youtube.com/embed/" + links[i]} key={i} />
       );
+      // push videos to empty array
       videoData.push(input);
     }
     console.log(videoData);
+    // change videos loaded store in redux to actor's videos/links inside the videoData array
     configureStore.dispatch(videosLoaded(videoData));
     return videoData;
   } catch (error) {
@@ -56,6 +60,7 @@ async function getPlaylist(e, videoData) {
 }
 
 function closeVideo() {
+  // change videosLoaded store to empty array
   configureStore.dispatch(videosLoaded([]));
 }
 

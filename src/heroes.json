@@ -167,7 +167,7 @@
         "playlistId": "PLaI6jcDw1oMAEEUlaHkKaQp3kYK7eYKoe"
       }
     ],
-    "spiderman": [
+    "spider-man": [
       {
         "id": 0,
         "img": "https://wallpaperaccess.com/full/6518915.jpg",
@@ -197,6 +197,40 @@
           "Spider-Man: No Way Home"
         ],
         "playlistId": "PLaI6jcDw1oMB8JI38xCQktJ_s29hNgfns"
+      }
+    ],
+    "thor": [
+      {
+        "id": 0,
+        "img": "https://i.insider.com/5b7acee73cccd122008b45ac?width=700",
+        "actor": "Chris Hemsworth",
+        "movies": [
+          "Thor, ",
+          "Thor: The Dark World, ",
+          "Avengers, ",
+          "Avengers: Age of Ultron, ",
+          "Avengers: Infinity War, ",
+          "Avengers: Endgame, ",
+          "Thor Ragnarok, "
+        ],
+        "playlistId": "PLaI6jcDw1oMB2ft0wGfMvOJN7Vwt5Ui8h"
+      }
+    ],
+    "wolverine": [
+      {
+        "id": 0,
+        "img": "https://media.gq.com/photos/58b9fda8803bdb766dd69ef7/16:9/w_1280,c_limit/wolverine.jpg",
+        "actor": "Hugh Jackman",
+        "movies": [
+          "X-Men, ",
+          "X2, ",
+          "X-Men: The Last Stand, ",
+          "X-Men Origins: Worlverine, ",
+          "X-Men: Days of Future Past, ",
+          "The Wolverine, ",
+          "Logan, "
+        ],
+        "playlistId": "PLaI6jcDw1oMDi8uO6VW0Xk7RGnSClmwh7"
       }
     ],
     "wonderwoman": [
@@ -237,6 +271,12 @@
       },
       {
         "Shazam": "http://www.webcomicplanet.com/wp-content/uploads/2018/01/shazam.jpg"
+      },
+      {
+        "Thor": "https://www.gamespot.com/a/uploads/screen_kubrick/171/1712892/3311332-thor-facebook.jpg"
+      },
+      {
+        "Wolverine": "https://cdn.mos.cms.futurecdn.net/S7mdQMREoCu6cma4vaRs6o-1200-80.jpg"
       },
       {
         "Wonder Woman": "https://i0.wp.com/www.comicsbeat.com/wp-content/uploads/2020/07/WW_Cv759_var.jpg?fit=1200%2C750&ssl=1"
